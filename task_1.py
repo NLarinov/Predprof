@@ -1,12 +1,13 @@
 with open("space.txt", encoding="utf8") as line, open("space_new.txt", "w", encoding="utf8") as lene:
     # парсим исходный файл
-    arr = list(map(lambda x: x.strip().split("*"), line.readlines()))[1:]
+    arr = list(map(lambda p: p.strip().split("*"), line.readlines()))[1:]
     for i in arr:
         # Номер корабля
         ship_number = i[0].split("-")[1]
 
         # первая цифра
         n = int(ship_number[0])
+
         # вторая цифра
         m = int(ship_number[1])
 
