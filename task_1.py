@@ -20,6 +20,7 @@ with open("space.txt", encoding="utf8") as line, open("space_new.txt", "w", enco
         # координаты направления
         x_d, y_d = map(int, i[3].split(" "))
 
+        # меняем координаты в соответствии с таблицей (она в условии)
         if n > 5:
             x = n + x_d
         else:
