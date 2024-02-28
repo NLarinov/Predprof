@@ -14,6 +14,7 @@ with open("space_new.txt", encoding="utf8") as line:
         if a == "stop":
             break
         if a in d.keys():
+            # выводим требуемые данные (было в условии)
             print(f"Корабль {a} был отправлен с планеты: {d[a][1]} и его направление движения было: {d[a][-1]}")
         else:
             print("error.. er.. ror..")
